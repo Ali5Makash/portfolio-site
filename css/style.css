@@ -1,0 +1,103 @@
+/* Основной стиль для всего сайта */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f4f4f4, #ffccff);
+  text-align: center;
+  background-image: url(https://i.pinimg.com/originals/ba/98/d6/ba98d6df5306561b1a8d2c939938370d.jpg);
+}
+
+/* Шапка сайта */
+header {
+  background-color: #6a0dad; /* Фиолетовый цвет */
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Стиль для секции героя */
+.hero {
+  background: url("../images/hero.jpg") no-repeat center center/cover;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Кнопка с розовой подсветкой */
+button {
+  background-color: #ff66b2; /* Розовый цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #ff80bf; /* Более светлый розовый цвет при наведении */
+}
+
+/* Стиль карточек проектов */
+.project-card {
+  background-color: #fff;
+  border: 1px solid #6a0dad; /* Фиолетовая рамка */
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Форма контактов */
+form input,
+form textarea {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ff66b2; /* Розовая рамка */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #6a0dad; /* Фиолетовый цвет */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #7a33cc; /* Более светлый фиолетовый при наведении */
+}
+
+/* Анимации при наведении */
+button,
+.project-card,
+form button {
+  transition: all 0.3s ease-in-out;
+}
